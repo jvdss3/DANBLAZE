@@ -3,13 +3,15 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time 
+import telegram
 import os
+
 
 os.system('cls')
         #Por informações do seu bot aqui #.
-api_key = '##########################' 
-user_id = '############'
-bot = telegram.Bot(token=api_key)
+api_key = '5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ' 
+user_id = '978591783'
+bot=telegram.Bot(token=api_key)
 
 chrome_options = Options()
 chrome_options.add_argument("-headless")
@@ -132,160 +134,155 @@ while True:
         xx = 0
 
         def verificarsaida(num):
-                if num == ['Preto','Preto','Preto','Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-    🔔⚠️🚨Atenção🚨⚠️🔔 
-    ✅Entrada confirmada! 🔴
-    ✅Proteção no: ⚪️
-    ✅Ate Gale 2 🐓🐓 
-    🎲Jogue agora Blaze Double🎲  
-     (https://blaze.com/r/VX9z7Y)     
-                                             💬 
-
-                ''')
-                if num == ['Vermelho','Vermelho','Vermelho','Vermelho']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Vermelho','Vermelho','Preto','Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto','Preto','Vermelho','Vermelho']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! 🔴
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Vermelho','Preto','Vermelho','Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto','Vermelho','Preto','Vermelho']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! 🔴
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto','Preto','Preto','Vermelho']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! 🔴
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Vermelho','Vermelho','Vermelho','Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Vermelho','Preto','Preto','Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! 🔴
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto','Vermelho','Vermelho','Vermelho']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto', 'Preto', 'Vermelho', 'Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto', 'Vermelho', 'Vermelho', 'Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Vermelho','Preto','Preto','Vermelho']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! 🔴
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
-                if num == ['Preto', 'Vermelho', 'Preto', 'Preto']:
-                    return bot.send_message(chat_id=user_id, text='''
-🔔⚠️🚨Atenção🚨⚠️🔔 
-✅Entrada confirmada! ⚫
-✅Proteção no: ⚪️
-✅Ate Gale 2 🐓🐓 
-🎲Jogue agora Blaze Double🎲  
-  (https://blaze.com/r/VX9z7Y)      
-                                             💬 
-by: @HACK_BLAZE_36 🥷🏾
-                ''')
+            if num == ['Preto','Preto','Preto','Preto']:
+                return bot.send_message(chat_id=user_id, text='''
+                    🔔⚠️🚨Atenção🚨⚠️🔔 
+                    ✅Entrada confirmada! 🔴
+                    ✅Proteção no: ⚪️
+                    ✅Ate Gale 2 🐓🐓 
+                    🎲Jogue agora Blaze Double🎲  
+                    (https://blaze.com/r/VX9z7Y)   
+                    ''')
+            if num == ['Vermelho','Vermelho','Vermelho','Vermelho']:
+                return bot.send_message(chat_id=user_id, text='''
+                    🔔⚠️🚨Atenção🚨⚠️🔔 
+                    ✅Entrada confirmada! ⚫
+                    ✅Proteção no: ⚪️
+                    ✅Ate Gale 2 🐓🐓 
+                    🎲Jogue agora Blaze Double🎲  
+                    (https://blaze.com/r/VX9z7Y)
+                    by: @HACK_BLAZE_36 🥷🏾
+                    ''')
+            if num == ['Vermelho','Vermelho','Preto','Preto']:
+                return bot.send_message(chat_id=user_id, text='''
+                    🔔⚠️🚨Atenção🚨⚠️🔔 
+                    ✅Entrada confirmada! ⚫
+                    ✅Proteção no: ⚪️
+                    ✅Ate Gale 2 🐓🐓 
+                    🎲Jogue agora Blaze Double🎲  
+                    (https://blaze.com/r/VX9z7Y)
+                    by: @HACK_BLAZE_36 🥷🏾
+                    ''')
+            if num == ['Preto','Preto','Vermelho','Vermelho']:
+                return bot.send_message(chat_id=user_id, text='''
+                    🔔⚠️🚨Atenção🚨⚠️🔔 
+                    ✅Entrada confirmada! 🔴
+                    ✅Proteção no: ⚪️
+                    ✅Ate Gale 2 🐓🐓 
+                    🎲Jogue agora Blaze Double🎲  
+                    (https://blaze.com/r/VX9z7Y)    
+                    by: @HACK_BLAZE_36 🥷🏾
+                    ''')
+#             if num == ['Vermelho','Preto','Vermelho','Preto']:
+#                 return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! ⚫
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Preto','Vermelho','Preto','Vermelho']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! 🔴
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Preto','Preto','Preto','Vermelho']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! 🔴
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Vermelho','Vermelho','Vermelho','Preto']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! ⚫
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Vermelho','Preto','Preto','Preto']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! 🔴
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Preto','Vermelho','Vermelho','Vermelho']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! ⚫
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Preto', 'Preto', 'Vermelho', 'Preto']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! ⚫
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Preto', 'Vermelho', 'Vermelho', 'Preto']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! ⚫
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Vermelho','Preto','Preto','Vermelho']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! 🔴
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
+#                 if num == ['Preto', 'Vermelho', 'Preto', 'Preto']:
+#                     return bot.send_message(chat_id=user_id, text='''
+# 🔔⚠️🚨Atenção🚨⚠️🔔 
+# ✅Entrada confirmada! ⚫
+# ✅Proteção no: ⚪️
+# ✅Ate Gale 2 🐓🐓 
+# 🎲Jogue agora Blaze Double🎲  
+#   (https://blaze.com/r/VX9z7Y)      
+#                                              💬 
+# by: @HACK_BLAZE_36 🥷🏾
+#                 ''')
         print(finalnum)
         print(finalcor)
         testando = verificarsaida(finalcor)

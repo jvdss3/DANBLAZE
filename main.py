@@ -182,10 +182,10 @@ while x == 1:
 
     retorno = f'{msg(sinal_final)}'
 
-    token = '5577309820:AAEgTJ-dUNVfgtajtclWBeuSHJk4w-JMkFA'
-    chat_id = '-1714484453'
+    token = '5543259990:AAEGAWO-LnGzAGI7H8-YxohzFYA82fSmPWA'
+    chat_id = '-1001626866194'
     mensagem = retorno
-    url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={retorno}'
+    url = ("")
 
     resp = requests.get(url)
 
@@ -222,7 +222,7 @@ while x == 1:
 
     qwd = sedeugreen(ret3)
 
-    url2 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={qwd}'
+    url2 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={qwd}')
 
     resp2 = requests.get(url2)
 
@@ -252,7 +252,7 @@ while x == 1:
 
         repassando = sedeugreen2(ret4)
 
-        url3 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={repassando}'
+        url3 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={repassando}')
 
         resp3 = requests.get(url3)
 
@@ -283,8 +283,8 @@ while x == 1:
 
             repassando9 = sedeugreen3(ret5)
 
-            url4 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={repassando9}'
+            url4 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={repassando9}')
 
             resp5 = requests.get(url4)
 
-    aguardar = time.sleep(180)
+    aguardar = time.sleep(20)
