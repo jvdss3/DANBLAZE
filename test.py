@@ -1,3 +1,4 @@
+from ast import Return
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -142,6 +143,38 @@ def msg(m):
     #         Em breve o sinal virá, fique atento!
     '''
     
+def bot_telegram(bot):
+    token = '5543259990:AAEGAWO-LnGzAGI7H8-YxohzFYA82fSmPWA'
+    chat_id = '-1001626866194'
+    mensagem = retorno
+    
+
+def vou_p(x):
+    if x == 'V':
+        return '🔴 (VERMELHO)'
+    if x == 'P':
+        return '⚫ (PRETO)'
+
+
+def green(txt):
+    if txt == guardasinal:
+            return '✅✅ GREEN ✅✅'
+    elif txt != guardasinal:
+        return f'REALIZAR GALE 1⃣  NO {vou_p(sinal_final)}'
+
+
+def green2(txt):
+    
+    if txt == guardasinal:
+        return '✅✅ GREEN ✅✅'
+    elif txt != guardasinal:
+        return f'REALIZAR GALE 2⃣  NO {vou_p(sinal_final)}'
+
+def green3(txt):
+    if txt1 == guardasinal:
+        return '✅✅ GREEN ✅✅'
+    elif txt1 != guardasinal:
+        return f'❌❌ LOSS ❌❌'
 
 while True:
     cdriver.get('https://blaze.com/pt/games/double')
@@ -170,4 +203,79 @@ while True:
     
     retorno = f'{msg(sinal_final)}'
     
-    aguardar = time.sleep(20)
+    url = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id=-1001626866194&text={retorno}')
+    
+
+    resp = requests.get(url)
+    guardasinal = sinal_final
+    
+    espproximo = time.sleep(60)
+    
+    cdriver.get('https://blaze.com/pt/games/double')
+    
+    htc = time.sleep(3)
+    
+    pegardados7 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
+    
+    listanum7 = pegardados7.split()
+    
+    pd7 = listanum7[0:16]
+    doc = time.sleep(3)
+    dot = map(qualcor, pd7)
+    
+    retornofinal123 = list(dot)
+    ret3 = retornofinal123 [0]
+    
+    qwd = green(ret3)
+    
+    url2 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={qwd}')
+    
+    resp2 = requests.get(url2)
+    
+    if qwd != '✅✅ GREEN ✅✅':
+        aguardar30 = time.sleep(30)
+
+        cdriver.get('https://blaze.com/pt/games/double')
+        htf = time.sleep(3)
+        pegardados8 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
+
+        pg8 = pegardados8.split()
+
+        pd8 = pg8[0:16]
+        htk = time.sleep(3)
+        art4 = list(map(qualcor, pd8))
+
+        finalret8 = art4[0]
+
+        ret4 = finalret8
+        
+    repassando = sedeugreen2(ret4)
+    
+    url3 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={repassando}')
+    
+    resp3 = requests.get(url3)
+    
+    if repassando != '✅✅ GREEN ✅✅':
+        aguardar40 = time.sleep(30)
+
+        cdriver.get('https://blaze.com/pt/games/double')
+        dot = time.sleep(3)
+        pegardados9 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
+
+        pg9 = pegardados9.split()
+
+        pd9 = pg9[0:16]
+        tkd = time.sleep(5)
+        art5 = map(qualcor, pd9)
+
+        finalret9 = list(art5)
+
+        ret5 = finalret9[0]
+            
+        repassando9 = sedeugreen3(ret5)
+    
+    url4 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={repassando9}')
+    
+    resp5 = requests.get(url4)
+    
+    aguardar = time.sleep(180)

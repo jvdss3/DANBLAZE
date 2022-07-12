@@ -156,135 +156,135 @@ while x == 1:
 
     print(sinal_final)
 
-    # def msg(m):
-    #     if m == 'V':
-    #         return '''
-    #     ✅ ENTRADA CONFIRMADA ✅
-    #     🎯 Aposte no 🔴 (VERMELHO)
-    #     🛡 Proteger no ⚪ (BRANCO)
-    #     ⚠ Entrar após a próxima rodada ⚠
-    #     '''
-    #     if m == 'P':
-    #         return '''
-    #         ✅ ENTRADA CONFIRMADA ✅ 
-    #         🎯 Aposte no ⚫ (PRETO)
-    #         🛡 Proteger no ⚪ (BRANCO)
-    #         ⚠ Entrar após a próxima rodada ⚠
-    #         '''
-    #     if m == '''
-    #         Fazendo análise mais detalhada
-    #         Em breve o sinal virá, fique atento!
-    #         ''':
-    #         return '''
-    #         Fazendo análise mais detalhada
-    #         Em breve o sinal virá, fique atento!
-    #         '''
+    def msg(m):
+        if m == 'V':
+            return '''
+        ✅ ENTRADA CONFIRMADA ✅
+        🎯 Aposte no 🔴 (VERMELHO)
+        🛡 Proteger no ⚪ (BRANCO)
+        ⚠ Entrar após a próxima rodada ⚠
+        '''
+        if m == 'P':
+            return '''
+            ✅ ENTRADA CONFIRMADA ✅ 
+            🎯 Aposte no ⚫ (PRETO)
+            🛡 Proteger no ⚪ (BRANCO)
+            ⚠ Entrar após a próxima rodada ⚠
+            '''
+        if m == '''
+            Fazendo análise mais detalhada
+            Em breve o sinal virá, fique atento!
+            ''':
+            return '''
+            Fazendo análise mais detalhada
+            Em breve o sinal virá, fique atento!
+            '''
 
-    # retorno = f'{msg(sinal_final)}'
+    retorno = f'{msg(sinal_final)}'
 
-    # token = '5577309820:AAEgTJ-dUNVfgtajtclWBeuSHJk4w-JMkFA'
-    # chat_id = '-1714484453'
-    # mensagem = retorno
-    # url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={retorno}'
+    token = '5577309820:AAEgTJ-dUNVfgtajtclWBeuSHJk4w-JMkFA'
+    chat_id = '-1714484453'
+    mensagem = retorno
+    url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={retorno}'
 
-    # resp = requests.get(url)
+    resp = requests.get(url)
 
-    # guardasinal = sinal_final
+    guardasinal = sinal_final
 
-    # espproximo = time.sleep(60)
+    espproximo = time.sleep(60)
 
-    # cdriver.get('https://blaze.com/pt/games/double')
-    # htc = time.sleep(3)
-    # pegardados7 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
+    cdriver.get('https://blaze.com/pt/games/double')
+    htc = time.sleep(3)
+    pegardados7 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
 
-    # listanum7 = pegardados7.split()
+    listanum7 = pegardados7.split()
 
-    # pd7 = listanum7[0:16]
-    # doc = time.sleep(3)
-    # dot = map(qualcor, pd7)
+    pd7 = listanum7[0:16]
+    doc = time.sleep(3)
+    dot = map(qualcor, pd7)
 
-    # retornofinal123 = list(dot)
+    retornofinal123 = list(dot)
 
-    # ret3 = retornofinal123 [0]
+    ret3 = retornofinal123 [0]
 
-    # def vou_p(x):
-    #     if x == 'V':
-    #         return '🔴 (VERMELHO)'
-    #     if x == 'P':
-    #         return '⚫ (PRETO)'
+    def vou_p(x):
+        if x == 'V':
+            return '🔴 (VERMELHO)'
+        if x == 'P':
+            return '⚫ (PRETO)'
 
-    # def sedeugreen(txt):
-    #     if txt == guardasinal:
-    #         return '✅✅ GREEN ✅✅'
+    def sedeugreen(txt):
+        if txt == guardasinal:
+            return '✅✅ GREEN ✅✅'
 
-    #     elif txt != guardasinal:
-    #         return f'REALIZAR GALE 1⃣  NO {vou_p(sinal_final)}'
+        elif txt != guardasinal:
+            return f'REALIZAR GALE 1⃣  NO {vou_p(sinal_final)}'
 
-    # qwd = sedeugreen(ret3)
+    qwd = sedeugreen(ret3)
 
-    # url2 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={qwd}'
+    url2 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={qwd}'
 
-    # resp2 = requests.get(url2)
+    resp2 = requests.get(url2)
 
-    # if qwd != '✅✅ GREEN ✅✅':
-    #     aguardar30 = time.sleep(30)
+    if qwd != '✅✅ GREEN ✅✅':
+        aguardar30 = time.sleep(30)
 
-    #     cdriver.get('https://blaze.com/pt/games/double')
-    #     htf = time.sleep(3)
-    #     pegardados8 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
+        cdriver.get('https://blaze.com/pt/games/double')
+        htf = time.sleep(3)
+        pegardados8 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
 
-    #     pg8 = pegardados8.split()
+        pg8 = pegardados8.split()
 
-    #     pd8 = pg8[0:16]
-    #     htk = time.sleep(3)
-    #     art4 = list(map(qualcor, pd8))
+        pd8 = pg8[0:16]
+        htk = time.sleep(3)
+        art4 = list(map(qualcor, pd8))
 
-    #     finalret8 = art4[0]
+        finalret8 = art4[0]
 
-    #     ret4 = finalret8
+        ret4 = finalret8
 
-    #     def sedeugreen2(txt):
-    #         if txt == guardasinal:
-    #             return '✅✅ GREEN ✅✅'
+        def sedeugreen2(txt):
+            if txt == guardasinal:
+                return '✅✅ GREEN ✅✅'
 
-    #         elif txt != guardasinal:
-    #             return f'REALIZAR GALE 2⃣  NO {vou_p(sinal_final)}'
+            elif txt != guardasinal:
+                return f'REALIZAR GALE 2⃣  NO {vou_p(sinal_final)}'
 
-    #     repassando = sedeugreen2(ret4)
+        repassando = sedeugreen2(ret4)
 
-    #     url3 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={repassando}'
+        url3 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={repassando}'
 
-    #     resp3 = requests.get(url3)
+        resp3 = requests.get(url3)
 
-    #     if repassando != '✅✅ GREEN ✅✅':
-    #         aguardar40 = time.sleep(30)
+        if repassando != '✅✅ GREEN ✅✅':
+            aguardar40 = time.sleep(30)
 
-    #         cdriver.get('https://blaze.com/pt/games/double')
-    #         dot = time.sleep(3)
-    #         pegardados9 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
+            cdriver.get('https://blaze.com/pt/games/double')
+            dot = time.sleep(3)
+            pegardados9 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
 
-    #         pg9 = pegardados9.split()
+            pg9 = pegardados9.split()
 
-    #         pd9 = pg9[0:16]
-    #         tkd = time.sleep(5)
-    #         art5 = map(qualcor, pd9)
+            pd9 = pg9[0:16]
+            tkd = time.sleep(5)
+            art5 = map(qualcor, pd9)
 
-    #         finalret9 = list(art5)
+            finalret9 = list(art5)
 
-    #         ret5 = finalret9[0]
+            ret5 = finalret9[0]
 
-    #         def sedeugreen3(txt1):
-    #             if txt1 == guardasinal:
-    #                 return '✅✅ GREEN ✅✅'
+            def sedeugreen3(txt1):
+                if txt1 == guardasinal:
+                    return '✅✅ GREEN ✅✅'
 
-    #             elif txt1 != guardasinal:
-    #                 return f'❌❌ LOSS ❌❌'
+                elif txt1 != guardasinal:
+                    return f'❌❌ LOSS ❌❌'
 
 
-    #         repassando9 = sedeugreen3(ret5)
+            repassando9 = sedeugreen3(ret5)
 
-    #         url4 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={repassando9}'
+            url4 = f'https://api.telegram.org/bot{token}/sendMessage?chat_id=-1001714484453&text={repassando9}'
 
-    #         resp5 = requests.get(url4)
+            resp5 = requests.get(url4)
 
-    # aguardar = time.sleep(180)
+    aguardar = time.sleep(180)
