@@ -90,21 +90,21 @@ def qualresultado(cor1, cor2):
     c1 = 'P'
     c2 = 'V'       
     if cor1 > 6:
-            return c2
-    # if cor1 > 9 and cor2 <= 5:
-    #     return c2
-    # if cor1 <= 6 and cor2 >= 8:
-    #     return c1
-    # if cor1 == 3 and cor2 >= 7:
-    #     return c1
-    # if cor1 == 5 and cor2 == 7:
-    #     return c1
-    # if cor2 >= 9 and cor1 == 4:
-    #     return c1
-    # if cor1 == 6 and cor2 == 6:
-    #     return c1
-    # if cor1 == 4 and cor2 >= 6:
-    #     return c2
+        return c2
+    if cor1 > 9 and cor2 <= 5:
+        return c2
+    if cor1 <= 6 and cor2 >= 8:
+        return c1
+    if cor1 == 3 and cor2 >= 7:
+        return c1
+    if cor1 == 5 and cor2 == 7:
+        return c1
+    if cor2 >= 9 and cor1 == 4:
+        return c1
+    if cor1 == 6 and cor2 == 6:
+        return c1
+    if cor1 == 4 and cor2 >= 6:
+        return c2
     elif cor1 == cor2:
         return '''
         Fazendo análise mais detalhada
@@ -146,7 +146,7 @@ def msg(m):
 def bot_telegram(bot):
     token = '5543259990:AAEGAWO-LnGzAGI7H8-YxohzFYA82fSmPWA'
     chat_id = '-1001626866194'
-    mensagem = retorno
+    
     
 
 def vou_p(x):
@@ -171,9 +171,9 @@ def green2(txt):
         return f'REALIZAR GALE 2⃣  NO {vou_p(sinal_final)}'
 
 def green3(txt):
-    if txt1 == guardasinal:
+    if txt == guardasinal:
         return '✅✅ GREEN ✅✅'
-    elif txt1 != guardasinal:
+    elif txt != guardasinal:
         return f'❌❌ LOSS ❌❌'
 
 while True:
@@ -203,24 +203,25 @@ while True:
     
     retorno = f'{msg(sinal_final)}'
     
+    mensagem = retorno
     url = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id=-1001626866194&text={retorno}')
     
 
     resp = requests.get(url)
     guardasinal = sinal_final
     
-    espproximo = time.sleep(60)
+    espproximo = time.sleep(20)
     
     cdriver.get('https://blaze.com/pt/games/double')
     
-    htc = time.sleep(3)
+    htc = time.sleep(1)
     
     pegardados7 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
     
     listanum7 = pegardados7.split()
     
     pd7 = listanum7[0:16]
-    doc = time.sleep(3)
+    doc = time.sleep(1)
     dot = map(qualcor, pd7)
     
     retornofinal123 = list(dot)
@@ -236,7 +237,7 @@ while True:
         aguardar30 = time.sleep(30)
 
         cdriver.get('https://blaze.com/pt/games/double')
-        htf = time.sleep(3)
+        htf = time.sleep(1)
         pegardados8 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
 
         pg8 = pegardados8.split()
@@ -249,33 +250,33 @@ while True:
 
         ret4 = finalret8
         
-    repassando = sedeugreen2(ret4)
+    repassando = green2(ret4)
     
     url3 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={repassando}')
     
     resp3 = requests.get(url3)
     
     if repassando != '✅✅ GREEN ✅✅':
-        aguardar40 = time.sleep(30)
+        aguardar40 = time.sleep(3)
 
         cdriver.get('https://blaze.com/pt/games/double')
-        dot = time.sleep(3)
+        dot = time.sleep(1)
         pegardados9 = cdriver.find_element(By.XPATH, '//*[@id="roulette-recent"]').text
 
         pg9 = pegardados9.split()
 
         pd9 = pg9[0:16]
-        tkd = time.sleep(5)
+        tkd = time.sleep(1)
         art5 = map(qualcor, pd9)
 
         finalret9 = list(art5)
 
         ret5 = finalret9[0]
             
-        repassando9 = sedeugreen3(ret5)
+        repassando9 = green3(ret5)
     
     url4 = ('https://api.telegram.org/bot{5460372550:AAEMoZWuuERMawqYRaW-X-F5ycQCJPXSgBQ}/sendMessage?chat_id= -1001626866194&text={repassando9}')
     
     resp5 = requests.get(url4)
     
-    aguardar = time.sleep(180)
+    aguardar = time.sleep(20)
