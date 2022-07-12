@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
-#import requests
+import requests
 
 
 chrome_options = Options()
@@ -87,23 +87,23 @@ def qualcor(x):
 
 def qualresultado(cor1, cor2):
     c1 = 'P'
-    c2 = 'V'
+    c2 = 'V'       
     if cor1 > 6:
             return c2
-    if cor1 > 9 and cor2 <= 5:
-        return c2
-    if cor1 <= 6 and cor2 >= 8:
-        return c1
-    if cor1 == 3 and cor2 >= 7:
-        return c1
-    if cor1 == 5 and cor2 == 7:
-        return c1
-    if cor2 >= 9 and cor1 == 4:
-        return c1
-    if cor1 == 6 and cor2 == 6:
-        return c1
-    if cor1 == 4 and cor2 >= 6:
-        return c2
+    # if cor1 > 9 and cor2 <= 5:
+    #     return c2
+    # if cor1 <= 6 and cor2 >= 8:
+    #     return c1
+    # if cor1 == 3 and cor2 >= 7:
+    #     return c1
+    # if cor1 == 5 and cor2 == 7:
+    #     return c1
+    # if cor2 >= 9 and cor1 == 4:
+    #     return c1
+    # if cor1 == 6 and cor2 == 6:
+    #     return c1
+    # if cor1 == 4 and cor2 >= 6:
+    #     return c2
     elif cor1 == cor2:
         return '''
         Fazendo análise mais detalhada
@@ -118,18 +118,23 @@ def qualresultado(cor1, cor2):
 def msg(m):
     if m == 'V':
         return '''
-        ✅ ENTRADA CONFIRMADA ✅
-        #     🎯 Aposte no 🔴 (VERMELHO)
-        #     🛡 Proteger no ⚪ (BRANCO)
-        #     ⚠ Entrar após a próxima rodada ⚠
+        🔔⚠️🚨Atenção🚨⚠️🔔 
+        ✅Entrada confirmada! 🔴
+        ✅Proteção no: ⚪️
+        ✅Ate Gale 2 🐓🐓 
+        🎲Jogue agora Blaze Double🎲  
+        (https://blaze.com/r/PZ9aVa) 
+        By: @DANBLAZE
         '''
     if m == 'P':
         return '''
-        ✅ ENTRADA CONFIRMADA ✅ 
-        #         🎯 Aposte no ⚫ (PRETO)
-        #         🛡 Proteger no ⚪ (BRANCO)
-        #         ⚠ Entrar após a próxima rodada ⚠
-        #         
+        🔔⚠️🚨Atenção🚨⚠️🔔 
+        ✅Entrada confirmada! ⚫
+        ✅Proteção no: ⚪️
+        ✅Ate Gale 2 🐓🐓 
+        🎲Jogue agora Blaze Double🎲  
+        (https://blaze.com/r/PZ9aVa) 
+        by: @DANBLAZE
         '''
     else:
         return'''
